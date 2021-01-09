@@ -41,6 +41,8 @@ While there weren't many strong linear correlations observed in the data, many f
 
 ## 5. Modeling
 
+For the sake of having a useful train/test split, I did not include 2020 data in my training or test data. This is due to the pandemic's effect on trends and the fact that my model wouldn't be able to train on any data during the pandemic and then also test on it. However, I did include the 'pandemic' feature in the data so I am confident that the model could actively function during the pandemic once trained on the entirety of available data.
+
 After trying multiple types of regression (Lasso, Ridge, OLS), I ultimately decided to deploy a Random Forest Regressor. It was able to handle the high-dimensionality of the data very effectively. 
 
 ![model_performance](https://github.com/JacksonPeoples/Springboard/blob/master/CapstoneTwo/Images/model_perf.png)
