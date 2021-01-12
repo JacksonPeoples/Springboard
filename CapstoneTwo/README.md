@@ -37,7 +37,7 @@ The observed weekday vs weekend patterns were extremely rigid. Even when account
 
 ## 4. Feature Engineering
 
-While there weren't many strong linear correlations observed in the data, many factors had strong explanatory power as binary categorical variables. Therefore I added features such as 'raining' and 'pandemic' as binary 'yes/no' variables as well as many holidays. I also added a features to help capture the weekly cyclicality of the data. These were a rolling average of 3 crash counts lagged by one week as well as the overall average count of a given hour on a given weekday.
+While there weren't many strong linear correlations observed in the data, many factors had strong explanatory power as binary categorical variables. Therefore I added features such as 'raining' and 'pandemic' as binary 'yes/no' variables as well as many holidays. I also added features to help capture the weekly cyclicality of the data. These were a rolling average of 3 crash counts lagged by one week as well as the overall average count of a given hour on a given weekday.
 
 ## 5. Modeling
 
