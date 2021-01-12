@@ -47,9 +47,9 @@ After trying multiple types of regression (Lasso, Ridge, OLS), I ultimately deci
 
 ![model_performance](https://github.com/JacksonPeoples/Springboard/blob/master/CapstoneTwo/Images/model_perf.png)
 
-## 6. Conclusions/reccomendations
+## 6. Conclusions/recommendations
 
-Ultimately, I believe the model performs well enough to be used. My reccomendation to Austin-area law enforcement would be to, as resources allow, choose a critical value of predicted crashes to signal deployment of a mix of real and fake law enforcement. I would randomly assign real/fake cops to said locations to keep drivers cautious.
+Ultimately, I believe the model performs well enough to be used. My recommendation to Austin-area law enforcement would be to, as resources allow, choose a critical value of predicted crashes to signal deployment of a mix of real and fake law enforcement. I would randomly assign real/fake cops to said locations to keep drivers cautious.
 
 ### References
 
