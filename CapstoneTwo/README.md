@@ -19,6 +19,8 @@ TXDOT is responsible for the collection and analysis of crash records submitted 
 
 After some initial observation of the data, it became pretty clear that the location of crashes yielded mostly pretty expected insights. Most crashes in Austin happen on either I-35, US-183 or other highways. I decided therefore to pair down the data to what was useful in predicting the amount of crashes in Austin in a given hour. This meant losing a lot of data that was provided regarding street number, motorcycle involvement, pedestrian involvement, etc. I also needed to groupby hour in order to match the granularity of my weather data.
 ## 3. EDA
+[EDA](https://github.com/JacksonPeoples/Springboard/blob/master/CapstoneTwo/EDA.ipynb)
+
 Although the locations of accidents seemed fairly intuitive, I decided to see whether there where any obvious patterns over the course of day when visualized on a map:
 ![crash_map](https://github.com/JacksonPeoples/Springboard/blob/master/CapstoneTwo/Images/crash_map.png)
 
@@ -36,10 +38,12 @@ The observed weekday vs weekend patterns were extremely rigid. Even when account
 ![rain](https://github.com/JacksonPeoples/Springboard/blob/master/CapstoneTwo/Images/raincrash.png)
 
 ## 4. Feature Engineering
+[Feature Engineering](https://github.com/JacksonPeoples/Springboard/blob/master/CapstoneTwo/FeatureEngineering.ipynb)
 
 While there weren't many strong linear correlations observed in the data, many factors had strong explanatory power as binary categorical variables. Therefore I added features such as 'raining' and 'pandemic' as binary 'yes/no' variables as well as many holidays. I also added features to help capture the weekly cyclicality of the data. These were a rolling average of 3 crash counts lagged by one week as well as the overall average count of a given hour on a given weekday.
 
 ## 5. Modeling
+[Model Selection](https://github.com/JacksonPeoples/Springboard/blob/master/CapstoneTwo/Model-Selection-Optimization.ipynb)
 
 For the sake of having a useful train/test split, I did not include 2020 data in my training or test data. This is due to the pandemic's effect on trends and the fact that my model wouldn't be able to train on any data during the pandemic and then also test on it. However, I did include the 'pandemic' feature in the data so I am confident that the model could effectively function during the pandemic once trained on the entirety of available data.
 
