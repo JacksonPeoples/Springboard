@@ -51,7 +51,13 @@ After trying multiple types of regression (Lasso, Ridge, OLS), I ultimately deci
 
 ![model_performance](https://github.com/JacksonPeoples/Springboard/blob/master/CapstoneTwo/Images/model_perf.png)
 
-## 6. Conclusions/recommendations
+## 6. Improvements
+
+Unfortunately, I was only able to find limited available traffic volume data for Austin. Not only would reliable traffic volume data likely improve the performance of the model, it would also greatly improve the interpretability. While it's abundantly clear that weekdays at 5PM have the highest occurence of crashes, it's also entirely possible that each single driver's *relative* risk is lower at this time. It's also possible the patterns observed in hourly crash counts serve more or less as a proxy for traffic volume.
+
+The model also seems to be more accurate on weekdays than weekends. My hunch is that this is due to different events that occur in Austin (SXSW, UT Football, ACL, F1) greatly effect traffic and, therefore, accidents. Creating a feature that took these events into account could potentially alleviate this issue.
+
+## 7. Conclusions/recommendations
 
 Ultimately, I believe the model performs well enough to be used. My recommendation to Austin-area law enforcement would be to, as resources allow, choose a critical value of predicted crashes to signal deployment of a mix of real and fake law enforcement. I would randomly assign real/fake cops to said locations to keep drivers cautious.
 
