@@ -1,0 +1,10 @@
+The first challenge with this dataset is that it is extremely unbalanced. About 13 percent of users adopt the product while nearly 87 percent do not. I fit a Decision Tree Classifier to the problem and ultimately ended up with about 87 percent accuracy on my training set. At first glance this is a decent classifier, but ulitimately, I would wind up with the same score if my model just predicted that no one adopted the product.
+
+However, creating the model did allow me to see what features were more useful in prediction. The most important features appear to be whether or not users created their account for personal projects, and how many people a given user's inviter had invited to the platform.
+
+Users who who created their account for a personal project were about half as likely to adopt the product. Would definitely focus marketing towards organizations.
+
+Users who had been invited by other users who invited 10+ people were about half as likely to adopt. This is interesting and may have to do with incentivizing invites? If there is an incentive to invite others, it seems to be effective in encouraging users to invite but doesn't ultimately result in increased adoption of the platform.
+
+Another interesting finding is that the marketing drip/marketing emails had virtually no effect on a user's likeliness to adopt. Definitely need to go back to the drawing board on emails/marketing drip.
+
